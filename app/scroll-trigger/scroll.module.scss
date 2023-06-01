@@ -1,0 +1,35 @@
+.main {
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  gap: 2rem;
+
+  .div {
+    background-color: goldenrod;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .textcon {
+    visibility: hidden;
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    gap: 2rem;
+    .text {
+      font-size: 4rem;
+      font-weight: 700;
+      margin: 0 auto;
+      font-kerning: none;
+    }
+
+    .text2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 0 auto;
+      font-kerning: none;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.hero {
+  height: 100vh;
+  visibility: hidden;
+  overflow: hidden;
+  .container {
+    width: 100vw;
+    min-width: 100vw;
+    margin: 0 auto;
+    .heroInner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 24px;
+      height: 100vh;
+      .heroContent {
+        width: 50%;
+        .heroContentInner {
+          width: 400px;
+          margin: 0 auto;
+          color: #323232;
+          h1 {
+            font-weight: 500;
+            font-size: 32px;
+            margin-bottom: 24px;
+            .heroContentLine {
+              margin: 0;
+              height: 44px;
+              overflow: hidden;
+            }
+          }
+          p {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            margin-bottom: 56px;
+            padding-right: 48px;
+          }
+          .btnRow {
+            position: relative;
+
+            &:before {
+              position: absolute;
+              content: "";
+              width: 56px;
+              height: 1px;
+              background: #dfdfdf;
+              top: 50%;
+              left: -68px;
+            }
+            button {
+              background: none;
+              font-size: 12px;
+              border: none;
+              padding: 0;
+              cursor: pointer;
+              text-transform: uppercase;
+              font-weight: 700;
+              letter-spacing: 0.7px;
+              display: flex;
+              align-items: center;
+              position: relative;
+
+              &:focus {
+                outline: none;
+              }
+              .arrowIcon {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #007fff;
+                height: 42px;
+                width: 42px;
+                border-radius: 100px;
+                left: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .heroImages {
+      position: relative;
+      .heroImagesInner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 1rem;
+        position: relative;
+
+        .heroImage {
+          overflow: hidden;
+
+          &.boy {
+            position: absolute;
+            top: -8rem;
+            right: 0;
+          }
+
+          img {
+            width: 17rem;
+            bottom: 0;
+            object-fit: cover;
+            height: 27rem;
+          }
+        }
+      }
+    }
+  }
+}
